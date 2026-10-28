@@ -141,3 +141,5 @@ html.tt *,html.tt *::before,html.tt *::after{transition:background-color .55s ea
 .brand img{display:block!important;height:40px;width:auto}
 .bt{display:flex;flex-direction:column;line-height:1;font-size:1.05rem}.bt small{font-size:.5rem;letter-spacing:.5em;margin-top:5px;opacity:.85;color:var(--crb)}
 @media(max-width:400px){.bt{font-size:.9rem}}
+
+html{overflow-x:clip}
