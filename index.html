@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exotic Properties — Spaces That Move You</title>
+<script>try{var t=localStorage.getItem('ep-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'day':'night';document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23080808%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 text-anchor=%27middle%27 fill=%27%23F0193D%27 font-family=%27Georgia%27%3EE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav id="nav">
+ <a href="#home" class="brand" aria-label="Exotic Properties home"><img src="assets/exotic.png" alt="Exotic Properties" onload="this.classList.add('ok')" onerror="this.remove()"><span class="mark"><i>E</i>Exotic</span></a>
+ <div class="links"><a href="#home" data-s="home">Home</a><a href="#about" data-s="about">About Us</a><a href="#services" data-s="services">Services</a><a href="#properties" data-s="properties">Properties</a><a href="#contact" data-s="contact">Contact</a></div>
+ <button class="tog" id="theme" aria-label="Toggle day and night mode"><svg class="i" viewBox="0 0 24 24"><path id="tp" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+ <a href="#contact" class="btn">Contact</a>
+ <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</nav>
+<div class="mm" id="mm" aria-hidden="true"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#properties">Properties</a><a href="#contact">Contact</a></div>
+
+<header id="home" data-sec>
+ <div id="slides"></div><div class="shade"></div>
+ <div class="loc" id="loc">Luxury Residences</div>
+ <div class="hc">
+  <p class="eyebrow ln" style="color:var(--crb)"><span id="eb"></span></p>
+  <h1 class="serif"><span class="ln"><span id="h1"></span></span><span class="ln"><span id="h2"></span></span></h1>
+  <p class="sub ln"><span id="sb"></span></p>
+  <div class="cta"><a class="btn fill" href="#properties">Explore Properties</a><a class="btn" href="#contact">Enquire Now</a></div>
+ </div>
+ <div class="scrl"><span>Scroll</span><i></i></div>
+ <div class="hbar"><div class="pg" id="pg"></div><div class="cnt"><b id="cn">01</b> / <span id="ct">03</span></div>
+  <button class="ic" id="pv" aria-label="Previous slide"><svg class="i" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <button class="ic" id="nx" aria-label="Next slide"><svg class="i" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button></div>
+ <div class="curtain" id="cur"></div>
+</header>
+
+<section id="reveal" data-sec>
+ <div class="rtitle">Architecture in motion</div>
+ <div class="frame" id="fr"><div class="ph" data-i="1"></div></div>
+ <span class="rl" style="left:5vw;top:16vh">01 — Light</span><span class="rl" style="right:5vw;top:30vh">02 — Volume</span><span class="rl" style="left:5vw;bottom:34vh">03 — Silence</span>
+ <h2 class="rbig serif" id="rb" style="opacity:0">Every line, <br>a decision.</h2>
+</section>
+
+<section id="about" data-sec>
+ <div class="wrap"><div class="ab">
+  <div class="stack"><div class="l3 serif" id="l3">E</div><div class="l1"><div class="ph" data-i="6" data-p="50"></div></div><div class="l2"><div class="ph" data-i="8"></div></div></div>
+  <div><p class="eyebrow">About Us</p>
+   <h2 class="serif"><span class="ln"><span>Beyond Property.</span></span><span class="ln"><span><em>Beyond Ordinary.</em></span></span></h2>
+   <p class="ln"><span>[Editable placeholder] Replace this with Exotic Properties’ own story: who you are, how you work, and what clients can expect.</span></p>
+   <p class="ln"><span>[Editable placeholder] Add your approach to service, locations served and philosophy here.</span></p></div>
+ </div>
+ <div class="mq"><div id="mqi" style="display:inline-block"><span>Exotic <b>Properties</b></span><span>Spaces That Move You</span><span>Exotic <b>Properties</b></span><span>Spaces That Move You</span></div></div></div>
+</section>
+
+<section id="services" data-sec><div class="wrap">
+ <div class="sh"><h2 class="serif"><span class="ln"><span>What we</span></span><span class="ln"><span>can do for you</span></span></h2><p>Proposed service categories — editable until confirmed by Exotic Properties.</p></div>
+ <div id="svl"></div></div>
+</section>
+
+<section id="properties" data-sec><div class="wrap">
+ <div class="sh"><h2 class="serif"><span class="ln"><span>Featured</span></span><span class="ln"><span>residences</span></span></h2><div><span class="demo">Demonstration content — not real listings</span></div></div>
+ <button class="fp" id="fp" data-k="0" aria-label="Open featured property"><div class="ph" data-i="0"></div><div class="t"><p class="eyebrow" style="color:var(--crb)">Featured · Demo</p><h3 class="serif" id="fpt"></h3></div></button>
+ <div class="grid" id="gr"></div></div>
+</section>
+
+<section id="contact" data-sec><div class="wrap ct">
+ <div><p class="eyebrow">Contact</p><h2 class="serif"><span class="ln"><span>Let’s find</span></span><span class="ln"><span>your <em>space.</em></span></span></h2>
+  <div class="nums" style="margin-top:36px"><a href="tel:9820939400">9820939400 <span>→</span></a><a href="tel:9930202971">9930202971 <span>→</span></a><a href="tel:9820995483">9820995483 <span>→</span></a></div>
+  <div class="soc"><a class="btn" href="https://www.instagram.com/exoticproperties07/" target="_blank" rel="noopener">Instagram</a><a class="btn" href="https://www.facebook.com/people/Exotic-Properties/61593253486327/" target="_blank" rel="noopener">Facebook</a></div></div>
+ <form id="cf" novalidate>
+  <div class="f"><label for="fn">Name</label><input id="fn" name="name" autocomplete="name"><span class="er"></span></div>
+  <div class="f"><label for="fe">Email</label><input id="fe" name="email" type="email" autocomplete="email"><span class="er"></span></div>
+  <div class="f"><label for="fph">Phone</label><input id="fph" name="phone" type="tel" autocomplete="tel"><span class="er"></span></div>
+  <div class="f"><label for="fm">Message</label><textarea id="fm" name="message" rows="4"></textarea><span class="er"></span></div>
+  <button class="btn fill" type="submit" style="justify-self:start">Send enquiry</button>
+  <p id="fs" role="status">No server is connected: sending opens your email app with the message prefilled.</p>
+ </form></div>
+</section>
+
+<footer><div class="wrap">
+ <div class="ft"><div><div class="brand" style="margin:0"><span class="mark"><i>E</i>Exotic</span></div><p>Exceptional properties. Distinctive lifestyles. Extraordinary possibilities.</p></div>
+ <div><h4>Navigate</h4><a href="#about">About Us</a><a href="#services">Services</a><a href="#properties">Properties</a><a href="#contact">Contact</a></div>
+ <div><h4>Call</h4><a href="tel:9820939400">9820939400</a><a href="tel:9930202971">9930202971</a><a href="tel:9820995483">9820995483</a></div>
+ <div><h4>Follow</h4><a href="https://www.instagram.com/exoticproperties07/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/people/Exotic-Properties/61593253486327/" target="_blank" rel="noopener">Facebook</a></div></div>
+ <div class="big serif" aria-hidden="true">Exotic</div>
+ <div class="fb"><span>© <span id="yr"></span> Exotic Properties. All rights reserved.</span><button class="btn" id="top">Back to top ↑</button></div></div>
+</footer>
+
+<div class="modal" id="mo" role="dialog" aria-modal="true" aria-labelledby="mt" aria-hidden="true"><div class="md" id="md">
+ <button class="ic x" id="mx" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+ <div class="im"><div class="ph" id="mi"></div></div>
+ <div class="bd"><span class="demo" style="align-self:start">Demo listing</span><p class="eyebrow" id="mc"></p><h3 class="serif" id="mt"></h3><p id="ml" style="color:var(--mu)"></p>
+  <dl><dt>Price</dt><dd>[Price on request — placeholder]</dd><dt>Size</dt><dd>[Placeholder]</dd><dt>Bedrooms</dt><dd>[Placeholder]</dd></dl>
+  <p style="color:var(--mu);font-size:.9rem">[Editable placeholder] Replace with the real property description once a listing is supplied.</p>
+  <a class="btn fill" href="#contact" id="mq" style="align-self:start">Enquire about this property</a></div></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
