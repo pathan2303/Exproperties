@@ -12,7 +12,7 @@ const PROPS=[
 const SERV=[['Buying Properties','Guidance from shortlist to handover.'],['Selling Properties','Considered presentation for distinctive homes.'],['Property Consultation','Clear, independent advice on your options.'],['Investment Opportunities','Explore properties with long-term potential.'],['Premium Property Discovery','Access to exceptional homes, matched to you.']];
 /* ===== IMAGES — your photos live in assets/images/. Replace a file (same name) or edit a path here ===== */
 const IMAGES=['villa-heritage','villa-pool','bay-aerial','tower','villa-kerala','house-dusk','balconies','villa-pool','skyline','handshake'].map(n=>`assets/images/${n}.jpg`);
-const scene=k=>`url("${IMAGES[k%IMAGES.length]}")`;
+const scene=k=>`url('${IMAGES[k%IMAGES.length]}')`; // single quotes: it is injected inside style="..." attributes
 const FAIL='linear-gradient(135deg,#141414,#3a1620)';
 document.querySelectorAll('.ph[data-i]').forEach(e=>{e.style.backgroundImage=scene(+e.dataset.i);if(e.dataset.p)e.style.backgroundPosition='50% '+e.dataset.p+'%';e.setAttribute('role','img');e.setAttribute('aria-label','Placeholder architectural artwork, '+(+e.dataset.i+1))});
 /* ===== BUILD DOM ===== */
